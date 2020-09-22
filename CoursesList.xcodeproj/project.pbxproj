@@ -19,6 +19,13 @@
 		55B72FE725189FB800623B06 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B72FE625189FB800623B06 /* CourseTableViewCell.swift */; };
 		55B72FE92518A03500623B06 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B72FE82518A03500623B06 /* NetworkManager.swift */; };
 		55B72FEB25190FC100623B06 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B72FEA25190FC100623B06 /* DataManager.swift */; };
+		55B72FEE251A225B00623B06 /* CourseDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B72FED251A225B00623B06 /* CourseDetailsViewModelProtocol.swift */; };
+		55B72FF0251A227100623B06 /* CourseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B72FEF251A227100623B06 /* CourseDetailsViewModel.swift */; };
+		55B72FF3251A2C2900623B06 /* CourseListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B72FF2251A2C2900623B06 /* CourseListViewModelProtocol.swift */; };
+		55B72FF5251A2C3A00623B06 /* CourseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B72FF4251A2C3A00623B06 /* CourseListViewModel.swift */; };
+		55B72FF8251A335100623B06 /* CourseTableViewCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B72FF7251A335100623B06 /* CourseTableViewCellViewModelProtocol.swift */; };
+		55B72FFA251A336700623B06 /* CourseTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B72FF9251A336700623B06 /* CourseTableViewCellViewModel.swift */; };
+		55B72FFC251A359700623B06 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B72FFB251A359700623B06 /* ImageManager.swift */; };
 		D057C9DF80127819B631298D /* Pods_CoursesList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AA252FFD10B616EB93C572 /* Pods_CoursesList.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +44,13 @@
 		55B72FE625189FB800623B06 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		55B72FE82518A03500623B06 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		55B72FEA25190FC100623B06 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		55B72FED251A225B00623B06 /* CourseDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
+		55B72FEF251A227100623B06 /* CourseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModel.swift; sourceTree = "<group>"; };
+		55B72FF2251A2C2900623B06 /* CourseListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModelProtocol.swift; sourceTree = "<group>"; };
+		55B72FF4251A2C3A00623B06 /* CourseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModel.swift; sourceTree = "<group>"; };
+		55B72FF7251A335100623B06 /* CourseTableViewCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		55B72FF9251A336700623B06 /* CourseTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		55B72FFB251A359700623B06 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		6526E3EB21F3A5D62619FF2D /* Pods-CoursesList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoursesList.debug.xcconfig"; path = "Target Support Files/Pods-CoursesList/Pods-CoursesList.debug.xcconfig"; sourceTree = "<group>"; };
 		75AA252FFD10B616EB93C572 /* Pods_CoursesList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoursesList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		766E7419F588D5640F897F88 /* Pods-CoursesList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoursesList.release.xcconfig"; path = "Target Support Files/Pods-CoursesList/Pods-CoursesList.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,9 +99,9 @@
 		55B72FC4251896B100623B06 /* CoursesList */ = {
 			isa = PBXGroup;
 			children = (
+				55B72FF1251A2BF200623B06 /* CourseList */,
+				55B72FEC251A221200623B06 /* CourseDetails */,
 				55B72FDD2518970100623B06 /* Models */,
-				55B72FDE2518970900623B06 /* Views */,
-				55B72FDA251896DF00623B06 /* Controllers */,
 				55B72FDF2518975900623B06 /* Services */,
 				55B72FDB251896E800623B06 /* Storyboads */,
 				55B72FD9251896C800623B06 /* Supports */,
@@ -104,15 +118,6 @@
 				55B72FD3251896BB00623B06 /* Info.plist */,
 			);
 			path = Supports;
-			sourceTree = "<group>";
-		};
-		55B72FDA251896DF00623B06 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				55B72FC9251896B100623B06 /* CoursesListTableViewController.swift */,
-				55B72FE425189DCA00623B06 /* CourseDetailsViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		55B72FDB251896E800623B06 /* Storyboads */ = {
@@ -140,21 +145,45 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		55B72FDE2518970900623B06 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				55B72FE625189FB800623B06 /* CourseTableViewCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		55B72FDF2518975900623B06 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				55B72FE82518A03500623B06 /* NetworkManager.swift */,
 				55B72FEA25190FC100623B06 /* DataManager.swift */,
+				55B72FFB251A359700623B06 /* ImageManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		55B72FEC251A221200623B06 /* CourseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				55B72FE425189DCA00623B06 /* CourseDetailsViewController.swift */,
+				55B72FED251A225B00623B06 /* CourseDetailsViewModelProtocol.swift */,
+				55B72FEF251A227100623B06 /* CourseDetailsViewModel.swift */,
+			);
+			path = CourseDetails;
+			sourceTree = "<group>";
+		};
+		55B72FF1251A2BF200623B06 /* CourseList */ = {
+			isa = PBXGroup;
+			children = (
+				55B72FC9251896B100623B06 /* CoursesListTableViewController.swift */,
+				55B72FF2251A2C2900623B06 /* CourseListViewModelProtocol.swift */,
+				55B72FF4251A2C3A00623B06 /* CourseListViewModel.swift */,
+				55B72FF6251A331D00623B06 /* CourseTableViewCell */,
+			);
+			path = CourseList;
+			sourceTree = "<group>";
+		};
+		55B72FF6251A331D00623B06 /* CourseTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				55B72FE625189FB800623B06 /* CourseTableViewCell.swift */,
+				55B72FF7251A335100623B06 /* CourseTableViewCellViewModelProtocol.swift */,
+				55B72FF9251A336700623B06 /* CourseTableViewCellViewModel.swift */,
+			);
+			path = CourseTableViewCell;
 			sourceTree = "<group>";
 		};
 		AC4FE5BF92D6BD9918326CD2 /* Frameworks */ = {
@@ -281,12 +310,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B72FF0251A227100623B06 /* CourseDetailsViewModel.swift in Sources */,
+				55B72FF5251A2C3A00623B06 /* CourseListViewModel.swift in Sources */,
 				55B72FE32518979D00623B06 /* Course.swift in Sources */,
+				55B72FFA251A336700623B06 /* CourseTableViewCellViewModel.swift in Sources */,
 				55B72FEB25190FC100623B06 /* DataManager.swift in Sources */,
 				55B72FCA251896B100623B06 /* CoursesListTableViewController.swift in Sources */,
+				55B72FFC251A359700623B06 /* ImageManager.swift in Sources */,
 				55B72FE725189FB800623B06 /* CourseTableViewCell.swift in Sources */,
 				55B72FE92518A03500623B06 /* NetworkManager.swift in Sources */,
+				55B72FF3251A2C2900623B06 /* CourseListViewModelProtocol.swift in Sources */,
 				55B72FE525189DCA00623B06 /* CourseDetailsViewController.swift in Sources */,
+				55B72FF8251A335100623B06 /* CourseTableViewCellViewModelProtocol.swift in Sources */,
+				55B72FEE251A225B00623B06 /* CourseDetailsViewModelProtocol.swift in Sources */,
 				55B72FC6251896B100623B06 /* AppDelegate.swift in Sources */,
 				55B72FC8251896B100623B06 /* SceneDelegate.swift in Sources */,
 			);
