@@ -17,9 +17,7 @@ class CourseTableViewCell: UITableViewCell {
         courseName.text = course.name
         
         DispatchQueue.global().async {
-            guard let url = course.imageUrl else { return }
-            guard let imageUrl = URL(string: url) else { return }
-            guard let imageData = try? Data(contentsOf: imageUrl) else { return }
+            guard let imageData = ImageManager.shared.getImageData(for: course.imageUrl) else { return }
             guard let image = UIImage(data: imageData) else { return }
             
             DispatchQueue.main.async {

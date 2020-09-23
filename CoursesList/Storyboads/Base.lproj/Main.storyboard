@@ -51,7 +51,6 @@
                                 <connections>
                                     <outlet property="courseImage" destination="jul-kn-phr" id="Hrm-hW-kPr"/>
                                     <outlet property="courseName" destination="yc3-iE-0ik" id="U35-AI-foP"/>
-                                    <segue destination="V5R-C8-cuh" kind="show" id="LtC-y2-70L"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,6 +60,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Courses List" id="AH7-tf-Y7G"/>
+                    <connections>
+                        <segue destination="V5R-C8-cuh" kind="show" identifier="showDetails" id="ewe-8s-vJc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bv-Dn-9nJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
