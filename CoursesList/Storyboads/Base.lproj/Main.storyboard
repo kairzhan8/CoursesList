@@ -10,7 +10,7 @@
         <!--Courses List-->
         <scene sceneID="2Gh-W3-snd">
             <objects>
-                <tableViewController id="zRN-B9-uid" customClass="CoursesListTableViewController" customModule="CoursesList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="zRN-B9-uid" customClass="CourseListViewController" customModule="CoursesList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LHx-bV-Ilc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
                                 <connections>
                                     <outlet property="courseImage" destination="jul-kn-phr" id="Hrm-hW-kPr"/>
                                     <outlet property="courseName" destination="yc3-iE-0ik" id="U35-AI-foP"/>
-                                    <segue destination="V5R-C8-cuh" kind="show" id="LtC-y2-70L"/>
+                                    <segue destination="V5R-C8-cuh" kind="show" identifier="CourseDetails" id="LtC-y2-70L"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

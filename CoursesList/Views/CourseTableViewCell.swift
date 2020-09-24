@@ -13,13 +13,11 @@ class CourseTableViewCell: UITableViewCell {
     @IBOutlet var courseImage: UIImageView!
     @IBOutlet var courseName: UILabel!
     
-    func configure(course: Course) {
-        courseName.text = course.name
+    func configure(course: CourseList.FetchCourses.ViewModel.DisplayedCourse) {
+        courseName.text = course.courseName
         
         DispatchQueue.global().async {
-            guard let url = course.imageUrl else { return }
-            guard let imageUrl = URL(string: url) else { return }
-            guard let imageData = try? Data(contentsOf: imageUrl) else { return }
+            guard let imageData = course.imageData else { return }
             guard let image = UIImage(data: imageData) else { return }
             
             DispatchQueue.main.async {
